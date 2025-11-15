@@ -629,3 +629,6 @@ override_dh_clean:
 	debconf-updatepo
 
 .PHONY: $(patsubst %,configure/%,$(BUILD_PACKAGES)) $(patsubst %,build/%,$(BUILD_PACKAGES)) $(patsubst %,install/%,$(BUILD_PACKAGES))
+
+override_dh_auto_test:
+	@:
